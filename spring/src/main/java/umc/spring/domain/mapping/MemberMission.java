@@ -18,6 +18,7 @@ public class MemberMission extends BaseEntity {
     private Long id;
 
     @Enumerated(EnumType.STRING)
+    @Column(nullable = false, length = 15)
     private MissionStatus status;
 
     @ManyToOne
